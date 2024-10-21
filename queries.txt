@@ -1,11 +1,7 @@
-Update the price
-
-SELECT 
-    name,
-    price * 1.10 AS new_price
-FROM 
-    products;
-
+-- Update the price of all products by 10%
 UPDATE products
 SET price = price * 1.10;
 
+-- Select the product names and their updated prices
+SELECT name, price AS new_price
+FROM products;
